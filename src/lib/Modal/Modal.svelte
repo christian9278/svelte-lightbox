@@ -6,7 +6,7 @@
     export let imagePreset: ImagePreset
 </script>
 
-<div class="svelte-lightbox-main" class:fullscreen={imagePreset === 'fullscreen'} class:scroll={imagePreset === 'scroll'}
+<div role="button" tabindex="0" class="svelte-lightbox-main" class:fullscreen={imagePreset === 'fullscreen'} class:scroll={imagePreset === 'scroll'}
      transition:fade={{ duration: transitionDuration }} on:click {...$$restProps}>
     <slot/>
 </div>
