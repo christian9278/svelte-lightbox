@@ -9,7 +9,7 @@
     }
 </script>
 
-<div class:svelte-lightbox-thumbnail={true} on:click={() => openImage(id)} {...$$restProps}>
+<div role="button" tabindex="0" class:svelte-lightbox-thumbnail={true} on:click={() => openImage(id)} {...$$restProps}>
     <slot/>
 </div>
 
