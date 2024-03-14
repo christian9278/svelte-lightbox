@@ -6,7 +6,7 @@ if (!id) {
 }
 </script>
 
-<div role="button" tabindex="0" class:svelte-lightbox-thumbnail={true} on:click={() => openImage(id)} {...$$restProps}>
+<div class:svelte-lightbox-thumbnail={true} on:click={() => openImage(id)} {...$$restProps}>
     <slot/>
 </div>
 

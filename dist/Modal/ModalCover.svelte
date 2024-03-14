@@ -2,7 +2,7 @@
 export let transitionDuration;
 </script>
 
-<div class="svelte-lightbox-overlay" on:click in:fade={{ duration: transitionDuration * 2 }} out:fade={{ duration: transitionDuration / 2 }} {...$$restProps}>
+<div role="button" tabindex="0" class="svelte-lightbox-overlay" on:click in:fade={{ duration: transitionDuration * 2 }} out:fade={{ duration: transitionDuration / 2 }} {...$$restProps}>
     <slot />
 </div>
 

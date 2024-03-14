@@ -1,4 +1,4 @@
-<div class:svelte-lightbox-thumbnail={true} on:click {...$$restProps}>
+<div role="button" tabindex="0" class:svelte-lightbox-thumbnail={true} on:click {...$$restProps}>
     <slot/>
 </div>
 

@@ -11,12 +11,3 @@ const imageId = (getContext('imageCounter'))({
 {#if $activeImageStore === imageId}
     <slot {...$$restProps}/>
 {/if}
-
-<style>
-	div {
-		max-height: inherit;
-		display: flex;
-		justify-content: center;
-	}
-
-</style>
